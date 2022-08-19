@@ -13,7 +13,7 @@ const ExpenseForm = () => {
     //     enteredAmount : ''
     // })
 
-    //one state approach
+    //one state approach create a object
     const titleChangeHandler = (event) => {
 
         setEnteredTitle(event.target.value)
