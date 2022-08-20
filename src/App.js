@@ -25,11 +25,17 @@ function App() {
     },
   ];
 
+
+  const addExpenseHandler = expense => {
+    console.log('In App.js')
+    console.log(expense)
+  }
+
   //to make expense item configurable from outisde, pass props
   return (
     <div>
       <h2>My Expenses</h2>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expenses}/>
     </div>
   );
